@@ -1,0 +1,27 @@
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Простой сайт с текстовым полем</title>
+</head>
+<body>
+
+<h1>Простой сайт с текстовым полем</h1>
+
+<form>
+    <label for="textInput">Введите текст:</label>
+    <input type="text" id="textInput">
+    <input type="button" value="Показать текст" onclick="showText()">
+</form>
+
+<p id="outputText"></p>
+
+<script>
+    function showText() {
+        var inputText = document.getElementById('textInput').value;
+        document.getElementById('outputText').textContent = "Вы ввели: " + inputText;
+    }
+</script>
+
+</body>
+</html>
